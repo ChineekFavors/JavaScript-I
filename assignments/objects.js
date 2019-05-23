@@ -28,7 +28,11 @@ const intern2 = {
 	id: 2,
 	email: "kdiben1@tinypic.com",
 	firstName: "Kennan",
-	gender: "M" 
+	gender: "M",
+	speak : function(){
+		return "Hello, my name is " + this.firstName;
+
+	} 
 };
 const intern3 = {
 	id: 3,
@@ -46,15 +50,11 @@ const intern5 = {
 	id: 5,
 	email: "adaine5@samsung.com",
 	firstName: "Antonietta",
-	gender: "F" 
+	gender: "F",
+	multiply: function(num1,num2){
+		return num1 * num2;
+	} 
 };
-
-console.log(intern1.firstName);
-console.log(intern2.id);
-console.log(intern3.email);
-console.log(intern4.firstName);
-console.log(intern5.gender);
-
 
 
 // ==== Challenge 2: Reading Object Data ==== 
@@ -69,6 +69,11 @@ console.log(intern5.gender);
 // Gannie's name
 
 // Antonietta's Gender
+console.log(intern1.firstName);
+console.log(intern2.id);
+console.log(intern3.email);
+console.log(intern4.firstName);
+console.log(intern5.gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
